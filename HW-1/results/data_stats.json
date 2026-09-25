@@ -1,0 +1,39 @@
+{
+  "n": 11519,
+  "label_counts": {
+    "business": 1429,
+    "politics": 1451,
+    "sports": 8639
+  },
+  "split_counts": {
+    "train": {
+      "business": 1157,
+      "politics": 1134,
+      "sports": 6924
+    },
+    "validation": {
+      "business": 124,
+      "politics": 152,
+      "sports": 876
+    },
+    "test": {
+      "business": 148,
+      "politics": 165,
+      "sports": 839
+    }
+  },
+  "duplicate_text_rows": 72,
+  "overlap_unique_texts": {
+    "train_validation": 12,
+    "train_test": 8,
+    "validation_test": 0
+  },
+  "word_length_percentiles": [
+    31.0,
+    457.0,
+    676.0,
+    818.0,
+    950.0,
+    5191.0
+  ]
+}

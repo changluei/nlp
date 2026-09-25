@@ -1,0 +1,180 @@
+{
+  "method": "w2v_nyt",
+  "config": {
+    "dimension": 100,
+    "pooling": "mean over in-vocabulary token occurrences",
+    "scaler": "StandardScaler fit on train only",
+    "vector_size": 100,
+    "window": 5,
+    "min_count": 2,
+    "sg": 1,
+    "negative": 5,
+    "sample": 0.001,
+    "epochs": 10,
+    "workers": 1,
+    "seed": 42,
+    "corpus_documents": 9215,
+    "corpus": "NYT training split only",
+    "vocabulary_size": 45291,
+    "blas_declaration_fix": true,
+    "coverage": {
+      "train": {
+        "token_coverage": 0.9967271243063267,
+        "matched_tokens": 5890141,
+        "total_tokens": 5909482,
+        "empty_documents": 0
+      },
+      "validation": {
+        "token_coverage": 0.992299395184483,
+        "matched_tokens": 733213,
+        "total_tokens": 738903,
+        "empty_documents": 0
+      },
+      "test": {
+        "token_coverage": 0.9920540754323518,
+        "matched_tokens": 717392,
+        "total_tokens": 723138,
+        "empty_documents": 0
+      }
+    },
+    "C": 0.1,
+    "solver": "lbfgs",
+    "max_iter": 2000,
+    "class_weight": null
+  },
+  "validation_trials": [
+    {
+      "C": 0.01,
+      "accuracy": 0.9852430555555556,
+      "macro_f1": 0.9623117150229401,
+      "iterations": 31
+    },
+    {
+      "C": 0.1,
+      "accuracy": 0.9869791666666666,
+      "macro_f1": 0.9653987481319884,
+      "iterations": 54
+    },
+    {
+      "C": 1.0,
+      "accuracy": 0.9861111111111112,
+      "macro_f1": 0.9637158711553911,
+      "iterations": 70
+    },
+    {
+      "C": 10.0,
+      "accuracy": 0.9852430555555556,
+      "macro_f1": 0.9621798373928828,
+      "iterations": 117
+    }
+  ],
+  "validation": {
+    "accuracy": 0.9869791666666666,
+    "macro_f1": 0.9653987481319884,
+    "classification_report": {
+      "business": {
+        "precision": 0.9508196721311475,
+        "recall": 0.9354838709677419,
+        "f1-score": 0.943089430894309,
+        "support": 124.0
+      },
+      "politics": {
+        "precision": 0.948051948051948,
+        "recall": 0.9605263157894737,
+        "f1-score": 0.954248366013072,
+        "support": 152.0
+      },
+      "sports": {
+        "precision": 0.9988584474885844,
+        "recall": 0.9988584474885844,
+        "f1-score": 0.9988584474885844,
+        "support": 876.0
+      },
+      "accuracy": 0.9869791666666666,
+      "macro avg": {
+        "precision": 0.9659100225572267,
+        "recall": 0.9649562114152666,
+        "f1-score": 0.9653987481319884,
+        "support": 1152.0
+      },
+      "weighted avg": {
+        "precision": 0.986983971743193,
+        "recall": 0.9869791666666666,
+        "f1-score": 0.9869694800910427,
+        "support": 1152.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        116,
+        7,
+        1
+      ],
+      [
+        6,
+        146,
+        0
+      ],
+      [
+        0,
+        1,
+        875
+      ]
+    ]
+  },
+  "test": {
+    "accuracy": 0.9895833333333334,
+    "macro_f1": 0.9768241383701143,
+    "classification_report": {
+      "business": {
+        "precision": 0.9790209790209791,
+        "recall": 0.9459459459459459,
+        "f1-score": 0.9621993127147767,
+        "support": 148.0
+      },
+      "politics": {
+        "precision": 0.9585798816568047,
+        "recall": 0.9818181818181818,
+        "f1-score": 0.9700598802395209,
+        "support": 165.0
+      },
+      "sports": {
+        "precision": 0.9976190476190476,
+        "recall": 0.99880810488677,
+        "f1-score": 0.9982132221560452,
+        "support": 839.0
+      },
+      "accuracy": 0.9895833333333334,
+      "macro avg": {
+        "precision": 0.9784066360989438,
+        "recall": 0.9755240775502992,
+        "f1-score": 0.9768241383701143,
+        "support": 1152.0
+      },
+      "weighted avg": {
+        "precision": 0.9896381652090788,
+        "recall": 0.9895833333333334,
+        "f1-score": 0.9895540554776301,
+        "support": 1152.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        140,
+        7,
+        1
+      ],
+      [
+        2,
+        162,
+        1
+      ],
+      [
+        1,
+        0,
+        838
+      ]
+    ]
+  },
+  "elapsed_seconds": 125.83158625000033
+}

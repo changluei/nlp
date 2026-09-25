@@ -1,0 +1,639 @@
+{
+  "binary": {
+    "original_test_n": 1152,
+    "no_train_overlap_n": 1144,
+    "no_train_overlap": {
+      "accuracy": 0.9868881118881119,
+      "macro_f1": 0.9706913663116129,
+      "classification_report": {
+        "business": {
+          "precision": 0.9714285714285714,
+          "recall": 0.9315068493150684,
+          "f1-score": 0.951048951048951,
+          "support": 146.0
+        },
+        "politics": {
+          "precision": 0.9518072289156626,
+          "recall": 0.9753086419753086,
+          "f1-score": 0.9634146341463414,
+          "support": 162.0
+        },
+        "sports": {
+          "precision": 0.9964200477326969,
+          "recall": 0.9988038277511961,
+          "f1-score": 0.997610513739546,
+          "support": 836.0
+        },
+        "accuracy": 0.9868881118881119,
+        "macro avg": {
+          "precision": 0.9732186160256436,
+          "recall": 0.9685397730138577,
+          "f1-score": 0.9706913663116129,
+          "support": 1144.0
+        },
+        "weighted avg": {
+          "precision": 0.9869130265886741,
+          "recall": 0.9868881118881119,
+          "f1-score": 0.9868257928943309,
+          "support": 1144.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          136,
+          8,
+          2
+        ],
+        [
+          3,
+          158,
+          1
+        ],
+        [
+          1,
+          0,
+          835
+        ]
+      ]
+    },
+    "error_count": 15,
+    "example_errors": [
+      {
+        "row_id": 11451,
+        "true_label": "business",
+        "predicted_label": "politics",
+        "excerpt": "the new york state court of appeals issued a n advisory opinion on wednesday that shift supervisors at starbucks, but not assistant managers with significant authority over other employees, may share in the baristas' tip pool.asked to interpret new york state labor law by the united states court of appeals for the second circuit, the state's highest court also advised that starbucks assistant store managers have so much authority that they should generally not be considered the type of workers w"
+      },
+      {
+        "row_id": 3086,
+        "true_label": "politics",
+        "predicted_label": "sports",
+        "excerpt": "tallahassee, fla. — the celebrated marching band of florida a&m university, whose reputation was damaged by the hazing-related death of a drum major, will be allowed to perform again after a 19-month suspension, university officials announced thursday .the university's interim president, larry robinson, said he was lifting the band's suspension because he was confident that the university had taken precautions to avoid repeating the circumstances surrounding the death of robert champion in.\"i wa"
+      },
+      {
+        "row_id": 9945,
+        "true_label": "business",
+        "predicted_label": "politics",
+        "excerpt": "in many stores around the country, the workers stocking the shelves and ringing up the gifts are at the very heart of this season's retail lament —many americans are so financially strapped that projections for holiday sales have grown bleaker by the week.and more so than in years past, the focus is on retail workers as more stores open on thanksgiving day, requiring many more to work on the holiday. even if they have the option of staying home, those still stuck at the bottom economic rung long"
+      },
+      {
+        "row_id": 6042,
+        "true_label": "business",
+        "predicted_label": "politics",
+        "excerpt": "on that day, unless congress were to raise the debt ceiling, the treasury would have only $30 billion cash on hand, putting the united states on the precipice of an unprecedented default, the department said on wednesday.that warning – and the threat of a financial crisis – have become entangled in the budget and financial negotiations on capitol hill, where legislators are already engaged in a partisan battle that has led to a budget impasse that could shut down the federal government on oct. 1"
+      },
+      {
+        "row_id": 4849,
+        "true_label": "business",
+        "predicted_label": "politics",
+        "excerpt": "washington — the white house is once again looking for someone to head the federal energy regulatory commission, following the decision by ronald j. binz to withdraw his name from consideration.mr. binz, a former utility regulator in colorado who was known for his support of renewable energy, had attracted unusual opposition from the coal industry and conservatives, and it appeared unlikely that his nomination would be approved by the senate energy committee . the commission he was nominated to "
+      }
+    ]
+  },
+  "frequency": {
+    "original_test_n": 1152,
+    "no_train_overlap_n": 1144,
+    "no_train_overlap": {
+      "accuracy": 0.9921328671328671,
+      "macro_f1": 0.980410240101765,
+      "classification_report": {
+        "business": {
+          "precision": 0.9928057553956835,
+          "recall": 0.9452054794520548,
+          "f1-score": 0.968421052631579,
+          "support": 146.0
+        },
+        "politics": {
+          "precision": 0.9526627218934911,
+          "recall": 0.9938271604938271,
+          "f1-score": 0.972809667673716,
+          "support": 162.0
+        },
+        "sports": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 836.0
+        },
+        "accuracy": 0.9921328671328671,
+        "macro avg": {
+          "precision": 0.9818228257630581,
+          "recall": 0.9796775466486274,
+          "f1-score": 0.980410240101765,
+          "support": 1144.0
+        },
+        "weighted avg": {
+          "precision": 0.9923784975826183,
+          "recall": 0.9921328671328671,
+          "f1-score": 0.9921194404260073,
+          "support": 1144.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          138,
+          8,
+          0
+        ],
+        [
+          1,
+          161,
+          0
+        ],
+        [
+          0,
+          0,
+          836
+        ]
+      ]
+    },
+    "error_count": 9,
+    "example_errors": [
+      {
+        "row_id": 11451,
+        "true_label": "business",
+        "predicted_label": "politics",
+        "excerpt": "the new york state court of appeals issued a n advisory opinion on wednesday that shift supervisors at starbucks, but not assistant managers with significant authority over other employees, may share in the baristas' tip pool.asked to interpret new york state labor law by the united states court of appeals for the second circuit, the state's highest court also advised that starbucks assistant store managers have so much authority that they should generally not be considered the type of workers w"
+      },
+      {
+        "row_id": 1994,
+        "true_label": "business",
+        "predicted_label": "politics",
+        "excerpt": "frankfurt — florian homm, a flamboyant former hedge fund manager who spent the last five years in hiding, was arrested in italy and faces extradition to the united states on securities fraud charges which could expose him to a lengthy prison sentence, the federal bureau of investigation said.the italian police arrested mr. homm, a 53-year-old german who holds undergraduate and graduate degrees from harvard university, on friday at the uffizi gallery in florence, the f.b.i. said. mr. homm is accu"
+      },
+      {
+        "row_id": 5115,
+        "true_label": "business",
+        "predicted_label": "politics",
+        "excerpt": "washington — with automatic spending cuts cascading through the government, lawmakers are calling for a review of federal policies they say have allowed businesses to profit on government research with limited return for taxpayers or consumers .that re-examination could be particularly intense in federal science, once a corner of the government with bipartisan protection that has become something of an orphan caught between republican efforts to protect the military and democrats' defense of soc"
+      },
+      {
+        "row_id": 4849,
+        "true_label": "business",
+        "predicted_label": "politics",
+        "excerpt": "washington — the white house is once again looking for someone to head the federal energy regulatory commission, following the decision by ronald j. binz to withdraw his name from consideration.mr. binz, a former utility regulator in colorado who was known for his support of renewable energy, had attracted unusual opposition from the coal industry and conservatives, and it appeared unlikely that his nomination would be approved by the senate energy committee . the commission he was nominated to "
+      },
+      {
+        "row_id": 10048,
+        "true_label": "business",
+        "predicted_label": "politics",
+        "excerpt": "los angeles — when president obama phoned the president of the a.f.l.-c.i.o. last month, he shared some news that the labor leader had long wanted to hear — the administration would propose measures to reduce workplace exposure to disease-causing silica dust.but their conversation soon moved to what has become a contentious topic this summer: labor's renewed anger over mr. obama's health care law and decisions surrounding it, especially the postponement of an employer mandate to ensure coverage "
+      }
+    ]
+  },
+  "tfidf": {
+    "original_test_n": 1152,
+    "no_train_overlap_n": 1144,
+    "no_train_overlap": {
+      "accuracy": 0.9912587412587412,
+      "macro_f1": 0.979956895467016,
+      "classification_report": {
+        "business": {
+          "precision": 0.9928057553956835,
+          "recall": 0.9452054794520548,
+          "f1-score": 0.968421052631579,
+          "support": 146.0
+        },
+        "politics": {
+          "precision": 0.9580838323353293,
+          "recall": 0.9876543209876543,
+          "f1-score": 0.9726443768996961,
+          "support": 162.0
+        },
+        "sports": {
+          "precision": 0.9976133651551312,
+          "recall": 1.0,
+          "f1-score": 0.998805256869773,
+          "support": 836.0
+        },
+        "accuracy": 0.9912587412587412,
+        "macro avg": {
+          "precision": 0.9828343176287148,
+          "recall": 0.977619933479903,
+          "f1-score": 0.979956895467016,
+          "support": 1144.0
+        },
+        "weighted avg": {
+          "precision": 0.9914020930033068,
+          "recall": 0.9912587412587412,
+          "f1-score": 0.991222952347108,
+          "support": 1144.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          138,
+          7,
+          1
+        ],
+        [
+          1,
+          160,
+          1
+        ],
+        [
+          0,
+          0,
+          836
+        ]
+      ]
+    },
+    "error_count": 10,
+    "example_errors": [
+      {
+        "row_id": 11492,
+        "true_label": "politics",
+        "predicted_label": "business",
+        "excerpt": "the times is answering readers' questions about the new health care exchanges in the your money column. the latest one covered many of the basics. if you're still not sure how the law affects you and your family, please e-mail your questions to tsbernard@nytimes.com.q. i am wondering whether moving to a new state is considered a life event under the affordable care act . my state, maine, has only two choices of providers and is said to be one of the most expensive states for health insurance . i"
+      },
+      {
+        "row_id": 11451,
+        "true_label": "business",
+        "predicted_label": "politics",
+        "excerpt": "the new york state court of appeals issued a n advisory opinion on wednesday that shift supervisors at starbucks, but not assistant managers with significant authority over other employees, may share in the baristas' tip pool.asked to interpret new york state labor law by the united states court of appeals for the second circuit, the state's highest court also advised that starbucks assistant store managers have so much authority that they should generally not be considered the type of workers w"
+      },
+      {
+        "row_id": 1994,
+        "true_label": "business",
+        "predicted_label": "politics",
+        "excerpt": "frankfurt — florian homm, a flamboyant former hedge fund manager who spent the last five years in hiding, was arrested in italy and faces extradition to the united states on securities fraud charges which could expose him to a lengthy prison sentence, the federal bureau of investigation said.the italian police arrested mr. homm, a 53-year-old german who holds undergraduate and graduate degrees from harvard university, on friday at the uffizi gallery in florence, the f.b.i. said. mr. homm is accu"
+      },
+      {
+        "row_id": 1531,
+        "true_label": "business",
+        "predicted_label": "politics",
+        "excerpt": "berlin — in a victory for google, the european union's highest court received a recommendation on tuesday to strike down a spanish regulator's demand that the search engine grant citizens a broad digital \"right to be forgotten,\" including the ability to delete arrest records and other negative publicity from google's online search results .an expert opinion requested by the european court of justice, which is based in luxembourg, recommended that google not be required to expunge all links to a "
+      },
+      {
+        "row_id": 4849,
+        "true_label": "business",
+        "predicted_label": "politics",
+        "excerpt": "washington — the white house is once again looking for someone to head the federal energy regulatory commission, following the decision by ronald j. binz to withdraw his name from consideration.mr. binz, a former utility regulator in colorado who was known for his support of renewable energy, had attracted unusual opposition from the coal industry and conservatives, and it appeared unlikely that his nomination would be approved by the senate energy committee . the commission he was nominated to "
+      }
+    ]
+  },
+  "glove": {
+    "original_test_n": 1152,
+    "no_train_overlap_n": 1144,
+    "no_train_overlap": {
+      "accuracy": 0.9886363636363636,
+      "macro_f1": 0.9752513663000477,
+      "classification_report": {
+        "business": {
+          "precision": 0.9655172413793104,
+          "recall": 0.958904109589041,
+          "f1-score": 0.9621993127147767,
+          "support": 146.0
+        },
+        "politics": {
+          "precision": 0.968944099378882,
+          "recall": 0.9629629629629629,
+          "f1-score": 0.9659442724458205,
+          "support": 162.0
+        },
+        "sports": {
+          "precision": 0.9964200477326969,
+          "recall": 0.9988038277511961,
+          "f1-score": 0.997610513739546,
+          "support": 836.0
+        },
+        "accuracy": 0.9886363636363636,
+        "macro avg": {
+          "precision": 0.9769604628302965,
+          "recall": 0.9735569667677334,
+          "f1-score": 0.9752513663000477,
+          "support": 1144.0
+        },
+        "weighted avg": {
+          "precision": 0.9885853332563748,
+          "recall": 0.9886363636363636,
+          "f1-score": 0.9886070465724132,
+          "support": 1144.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          140,
+          5,
+          1
+        ],
+        [
+          4,
+          156,
+          2
+        ],
+        [
+          1,
+          0,
+          835
+        ]
+      ]
+    },
+    "error_count": 13,
+    "example_errors": [
+      {
+        "row_id": 11492,
+        "true_label": "politics",
+        "predicted_label": "business",
+        "excerpt": "the times is answering readers' questions about the new health care exchanges in the your money column. the latest one covered many of the basics. if you're still not sure how the law affects you and your family, please e-mail your questions to tsbernard@nytimes.com.q. i am wondering whether moving to a new state is considered a life event under the affordable care act . my state, maine, has only two choices of providers and is said to be one of the most expensive states for health insurance . i"
+      },
+      {
+        "row_id": 5109,
+        "true_label": "politics",
+        "predicted_label": "business",
+        "excerpt": "washington — a floating home is not a vessel to be regulated under federal admiralty law, the supreme court ruled on tuesday in a colorful decision that featured photographs and the first dissenting opinion in an argued case since the term started in october.the case was closely watched by businesses that operate floating structures like casinos, restaurants and hotels . structures deemed to be vessels are subject to federal laws and regulations, including ones concerning safety, employment and "
+      },
+      {
+        "row_id": 3086,
+        "true_label": "politics",
+        "predicted_label": "sports",
+        "excerpt": "tallahassee, fla. — the celebrated marching band of florida a&m university, whose reputation was damaged by the hazing-related death of a drum major, will be allowed to perform again after a 19-month suspension, university officials announced thursday .the university's interim president, larry robinson, said he was lifting the band's suspension because he was confident that the university had taken precautions to avoid repeating the circumstances surrounding the death of robert champion in.\"i wa"
+      },
+      {
+        "row_id": 10692,
+        "true_label": "business",
+        "predicted_label": "politics",
+        "excerpt": "washington — the federal reserve's campaign to encourage economic growth was bolstered on thursday as janet l. yellen moved to the verge of confirmation as the next head of the fed, and a change in senate procedures made it easier for the white house to fill three other vacancies on the fed's board . the senate banking committee sent ms. yellen's nomination to the full senate on thursday morning by a vote of. this margin, unusually small compared with those for past nominees to lead the fed, ref"
+      },
+      {
+        "row_id": 4849,
+        "true_label": "business",
+        "predicted_label": "politics",
+        "excerpt": "washington — the white house is once again looking for someone to head the federal energy regulatory commission, following the decision by ronald j. binz to withdraw his name from consideration.mr. binz, a former utility regulator in colorado who was known for his support of renewable energy, had attracted unusual opposition from the coal industry and conservatives, and it appeared unlikely that his nomination would be approved by the senate energy committee . the commission he was nominated to "
+      }
+    ]
+  },
+  "w2v_ag": {
+    "original_test_n": 1152,
+    "no_train_overlap_n": 1144,
+    "no_train_overlap": {
+      "accuracy": 0.9833916083916084,
+      "macro_f1": 0.9631560112347798,
+      "classification_report": {
+        "business": {
+          "precision": 0.9577464788732394,
+          "recall": 0.9315068493150684,
+          "f1-score": 0.9444444444444444,
+          "support": 146.0
+        },
+        "politics": {
+          "precision": 0.9393939393939394,
+          "recall": 0.9567901234567902,
+          "f1-score": 0.9480122324159022,
+          "support": 162.0
+        },
+        "sports": {
+          "precision": 0.996415770609319,
+          "recall": 0.9976076555023924,
+          "f1-score": 0.9970113568439928,
+          "support": 836.0
+        },
+        "accuracy": 0.9833916083916084,
+        "macro avg": {
+          "precision": 0.9645187296254992,
+          "recall": 0.9619682094247503,
+          "f1-score": 0.9631560112347798,
+          "support": 1144.0
+        },
+        "weighted avg": {
+          "precision": 0.9834059338520121,
+          "recall": 0.9833916083916084,
+          "f1-score": 0.9833639552988137,
+          "support": 1144.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          136,
+          9,
+          1
+        ],
+        [
+          5,
+          155,
+          2
+        ],
+        [
+          1,
+          1,
+          834
+        ]
+      ]
+    },
+    "error_count": 19,
+    "example_errors": [
+      {
+        "row_id": 11492,
+        "true_label": "politics",
+        "predicted_label": "business",
+        "excerpt": "the times is answering readers' questions about the new health care exchanges in the your money column. the latest one covered many of the basics. if you're still not sure how the law affects you and your family, please e-mail your questions to tsbernard@nytimes.com.q. i am wondering whether moving to a new state is considered a life event under the affordable care act . my state, maine, has only two choices of providers and is said to be one of the most expensive states for health insurance . i"
+      },
+      {
+        "row_id": 11451,
+        "true_label": "business",
+        "predicted_label": "politics",
+        "excerpt": "the new york state court of appeals issued a n advisory opinion on wednesday that shift supervisors at starbucks, but not assistant managers with significant authority over other employees, may share in the baristas' tip pool.asked to interpret new york state labor law by the united states court of appeals for the second circuit, the state's highest court also advised that starbucks assistant store managers have so much authority that they should generally not be considered the type of workers w"
+      },
+      {
+        "row_id": 2371,
+        "true_label": "sports",
+        "predicted_label": "business",
+        "excerpt": "recife, brazil — for soccer fans flocking to confederations cup matches in brazil's tropical northeast next week, getting tickets to the stadium should be simple - but two in three will not find accommodations in the host city recife . officials are sending visitors as far as 120 kilometers (75 miles) inland to spend the night, a detour on par with staying in philadelphia for a new york knicks game.the tournament starting saturday, a dress rehearsal for the 2014 world cup, will lay bare for visi"
+      },
+      {
+        "row_id": 1296,
+        "true_label": "business",
+        "predicted_label": "politics",
+        "excerpt": "london — a hairdresser in liverpool and a knitwear manufacturer in nottingham were among the first nine people and companies publicly branded tax scofflaws by the british authorities as part of a government \"name and shame\" campaign.on its web site, her majesty's revenue & customs on thursday published the names and addresses of accused tax cheats, along with the amount the department says they owe. the individuals and small businesses owe a combined.8 million, or.7 million, in fines and unpaid "
+      },
+      {
+        "row_id": 3086,
+        "true_label": "politics",
+        "predicted_label": "sports",
+        "excerpt": "tallahassee, fla. — the celebrated marching band of florida a&m university, whose reputation was damaged by the hazing-related death of a drum major, will be allowed to perform again after a 19-month suspension, university officials announced thursday .the university's interim president, larry robinson, said he was lifting the band's suspension because he was confident that the university had taken precautions to avoid repeating the circumstances surrounding the death of robert champion in.\"i wa"
+      }
+    ]
+  },
+  "w2v_nyt": {
+    "original_test_n": 1152,
+    "no_train_overlap_n": 1144,
+    "no_train_overlap": {
+      "accuracy": 0.9895104895104895,
+      "macro_f1": 0.9764638276986476,
+      "classification_report": {
+        "business": {
+          "precision": 0.9787234042553191,
+          "recall": 0.9452054794520548,
+          "f1-score": 0.9616724738675958,
+          "support": 146.0
+        },
+        "politics": {
+          "precision": 0.9578313253012049,
+          "recall": 0.9814814814814815,
+          "f1-score": 0.9695121951219512,
+          "support": 162.0
+        },
+        "sports": {
+          "precision": 0.997610513739546,
+          "recall": 0.9988038277511961,
+          "f1-score": 0.9982068141063957,
+          "support": 836.0
+        },
+        "accuracy": 0.9895104895104895,
+        "macro avg": {
+          "precision": 0.97805508109869,
+          "recall": 0.9751635962282442,
+          "f1-score": 0.9764638276986476,
+          "support": 1144.0
+        },
+        "weighted avg": {
+          "precision": 0.9895670290265141,
+          "recall": 0.9895104895104895,
+          "f1-score": 0.9894808158980524,
+          "support": 1144.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          138,
+          7,
+          1
+        ],
+        [
+          2,
+          159,
+          1
+        ],
+        [
+          1,
+          0,
+          835
+        ]
+      ]
+    },
+    "error_count": 12,
+    "example_errors": [
+      {
+        "row_id": 11492,
+        "true_label": "politics",
+        "predicted_label": "business",
+        "excerpt": "the times is answering readers' questions about the new health care exchanges in the your money column. the latest one covered many of the basics. if you're still not sure how the law affects you and your family, please e-mail your questions to tsbernard@nytimes.com.q. i am wondering whether moving to a new state is considered a life event under the affordable care act . my state, maine, has only two choices of providers and is said to be one of the most expensive states for health insurance . i"
+      },
+      {
+        "row_id": 3086,
+        "true_label": "politics",
+        "predicted_label": "sports",
+        "excerpt": "tallahassee, fla. — the celebrated marching band of florida a&m university, whose reputation was damaged by the hazing-related death of a drum major, will be allowed to perform again after a 19-month suspension, university officials announced thursday .the university's interim president, larry robinson, said he was lifting the band's suspension because he was confident that the university had taken precautions to avoid repeating the circumstances surrounding the death of robert champion in.\"i wa"
+      },
+      {
+        "row_id": 4849,
+        "true_label": "business",
+        "predicted_label": "politics",
+        "excerpt": "washington — the white house is once again looking for someone to head the federal energy regulatory commission, following the decision by ronald j. binz to withdraw his name from consideration.mr. binz, a former utility regulator in colorado who was known for his support of renewable energy, had attracted unusual opposition from the coal industry and conservatives, and it appeared unlikely that his nomination would be approved by the senate energy committee . the commission he was nominated to "
+      },
+      {
+        "row_id": 9872,
+        "true_label": "business",
+        "predicted_label": "politics",
+        "excerpt": "washington — president obama 's first major environmental decision of his second term could be to approve the keystone xl pipeline, profoundly disappointing environmental advocates who have made the project a symbolic test of the president's seriousness on climate change .but could some kind of deal be in the offing — a major climate policy announcement on, for example, power plant regulation or renewable energy incentives — to ease the sting of the pipeline approval? white house and state depar"
+      },
+      {
+        "row_id": 10048,
+        "true_label": "business",
+        "predicted_label": "politics",
+        "excerpt": "los angeles — when president obama phoned the president of the a.f.l.-c.i.o. last month, he shared some news that the labor leader had long wanted to hear — the administration would propose measures to reduce workplace exposure to disease-causing silica dust.but their conversation soon moved to what has become a contentious topic this summer: labor's renewed anger over mr. obama's health care law and decisions surrounding it, especially the postponement of an employer mandate to ensure coverage "
+      }
+    ]
+  },
+  "bert": {
+    "original_test_n": 1152,
+    "no_train_overlap_n": 1144,
+    "no_train_overlap": {
+      "accuracy": 0.9790209790209791,
+      "macro_f1": 0.9522874448019046,
+      "classification_report": {
+        "business": {
+          "precision": 0.9370629370629371,
+          "recall": 0.9178082191780822,
+          "f1-score": 0.9273356401384083,
+          "support": 146.0
+        },
+        "politics": {
+          "precision": 0.926829268292683,
+          "recall": 0.9382716049382716,
+          "f1-score": 0.9325153374233128,
+          "support": 162.0
+        },
+        "sports": {
+          "precision": 0.996415770609319,
+          "recall": 0.9976076555023924,
+          "f1-score": 0.9970113568439928,
+          "support": 836.0
+        },
+        "accuracy": 0.9790209790209791,
+        "macro avg": {
+          "precision": 0.953435991988313,
+          "recall": 0.9512291598729153,
+          "f1-score": 0.9522874448019046,
+          "support": 1144.0
+        },
+        "weighted avg": {
+          "precision": 0.9789869882027921,
+          "recall": 0.9790209790209791,
+          "f1-score": 0.9789859986401767,
+          "support": 1144.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          134,
+          12,
+          0
+        ],
+        [
+          7,
+          152,
+          3
+        ],
+        [
+          2,
+          0,
+          834
+        ]
+      ]
+    },
+    "error_count": 24,
+    "example_errors": [
+      {
+        "row_id": 4227,
+        "true_label": "politics",
+        "predicted_label": "sports",
+        "excerpt": "st . louis — the unmistakable pop of a gunshot ricocheted through the park in the humid air, and montez wayne could only hope that the bullet did not have his name on it. he sprang from his seat beneath a sprawling bald cypress, ready to make his move.he had seen it play out too many times before: the blast of gunfire, the blood, the body. in mr. wayne's neighborhood and others on the north side of st . louis, drugs, poverty and struggle go hand in hand with gun violence . he barely knows his fa"
+      },
+      {
+        "row_id": 6493,
+        "true_label": "politics",
+        "predicted_label": "sports",
+        "excerpt": "denver — the saturday morning workout crew had survived a grueling round of push-ups and sprints, crunches and lunges under a broiling sun in the heart of the gentrifying downtown here. but as they got ready for the day's sweaty coup de grâce — balancing acrobatically on their hands — they were alerted that their exercise routine had run afoul of the rules.\"excuse me, you can't be here,\" said a manager from a nearby condominium office. he pointed across the outdoor plaza to a sign prohibiting gr"
+      },
+      {
+        "row_id": 5115,
+        "true_label": "business",
+        "predicted_label": "politics",
+        "excerpt": "washington — with automatic spending cuts cascading through the government, lawmakers are calling for a review of federal policies they say have allowed businesses to profit on government research with limited return for taxpayers or consumers .that re-examination could be particularly intense in federal science, once a corner of the government with bipartisan protection that has become something of an orphan caught between republican efforts to protect the military and democrats' defense of soc"
+      },
+      {
+        "row_id": 9766,
+        "true_label": "business",
+        "predicted_label": "politics",
+        "excerpt": "hospitals across the nation are being swept up in the biggest wave of mergers since the 1990s, a development that is creating giant hospital systems that could one day dominate american health care and drive up costs .the consolidations are being driven by a confluence of powerful forces, not least of which is president obama's signature health care law, the affordable care act . that law, many experts say, is transforming the economics of health care and pushing a growing number of hospitals in"
+      },
+      {
+        "row_id": 4849,
+        "true_label": "business",
+        "predicted_label": "politics",
+        "excerpt": "washington — the white house is once again looking for someone to head the federal energy regulatory commission, following the decision by ronald j. binz to withdraw his name from consideration.mr. binz, a former utility regulator in colorado who was known for his support of renewable energy, had attracted unusual opposition from the coal industry and conservatives, and it appeared unlikely that his nomination would be approved by the senate energy committee . the commission he was nominated to "
+      }
+    ]
+  }
+}

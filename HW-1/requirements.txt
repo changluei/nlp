@@ -1,0 +1,9 @@
+numpy==2.2.6
+scipy==1.16.3
+scikit-learn==1.7.2
+gensim==4.4.0
+torch==2.14.0
+transformers==4.57.6
+matplotlib==3.11.2
+Cython==3.0.12
+wheel==0.48.0

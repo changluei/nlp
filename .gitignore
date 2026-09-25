@@ -1,0 +1,43 @@
+# OS and editors
+.DS_Store
+._*
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Python environments, bytecode, test and tool caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+.cache/
+cache/
+tmp/
+*.log
+.env
+.env.*
+!.env.example
+
+# Downloaded pretrained weights and generated checkpoints
+HW-1/assets/
+HW-1/checkpoints/
+HW-1/results/predictions/
+*.pt
+*.pth
+*.safetensors
+
+# The report directory publishes exactly one file.
+/HW-1/report/*
+!/HW-1/report/main.pdf

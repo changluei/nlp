@@ -1,0 +1,179 @@
+[
+  {
+    "epoch": 1,
+    "train_loss": 0.27632448669428,
+    "validation": {
+      "accuracy": 0.9713541666666666,
+      "macro_f1": 0.9284917149998472,
+      "classification_report": {
+        "business": {
+          "precision": 0.9363636363636364,
+          "recall": 0.8306451612903226,
+          "f1-score": 0.8803418803418803,
+          "support": 124.0
+        },
+        "politics": {
+          "precision": 0.8827160493827161,
+          "recall": 0.9407894736842105,
+          "f1-score": 0.910828025477707,
+          "support": 152.0
+        },
+        "sports": {
+          "precision": 0.9920454545454546,
+          "recall": 0.9965753424657534,
+          "f1-score": 0.9943052391799544,
+          "support": 876.0
+        },
+        "accuracy": 0.9713541666666666,
+        "macro avg": {
+          "precision": 0.9370417134306024,
+          "recall": 0.9226699924800955,
+          "f1-score": 0.9284917149998472,
+          "support": 1152.0
+        },
+        "weighted avg": {
+          "precision": 0.9716265178794115,
+          "recall": 0.9713541666666666,
+          "f1-score": 0.971023995274865,
+          "support": 1152.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          103,
+          16,
+          5
+        ],
+        [
+          7,
+          143,
+          2
+        ],
+        [
+          0,
+          3,
+          873
+        ]
+      ]
+    },
+    "elapsed_seconds": 210.26738695899985
+  },
+  {
+    "epoch": 2,
+    "train_loss": 0.04828307217394309,
+    "validation": {
+      "accuracy": 0.9696180555555556,
+      "macro_f1": 0.9316128984803683,
+      "classification_report": {
+        "business": {
+          "precision": 0.896,
+          "recall": 0.9032258064516129,
+          "f1-score": 0.8995983935742972,
+          "support": 124.0
+        },
+        "politics": {
+          "precision": 0.88125,
+          "recall": 0.9276315789473685,
+          "f1-score": 0.9038461538461539,
+          "support": 152.0
+        },
+        "sports": {
+          "precision": 0.9965397923875432,
+          "recall": 0.9863013698630136,
+          "f1-score": 0.9913941480206541,
+          "support": 876.0
+        },
+        "accuracy": 0.9696180555555556,
+        "macro avg": {
+          "precision": 0.9245965974625143,
+          "recall": 0.9390529184206651,
+          "f1-score": 0.9316128984803683,
+          "support": 1152.0
+        },
+        "weighted avg": {
+          "precision": 0.9705059532391387,
+          "recall": 0.9696180555555556,
+          "f1-score": 0.9699618835537511,
+          "support": 1152.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          112,
+          11,
+          1
+        ],
+        [
+          9,
+          141,
+          2
+        ],
+        [
+          4,
+          8,
+          864
+        ]
+      ]
+    },
+    "elapsed_seconds": 248.17877324999972
+  },
+  {
+    "epoch": 3,
+    "train_loss": 0.017744640178957726,
+    "validation": {
+      "accuracy": 0.9730902777777778,
+      "macro_f1": 0.9366469354326759,
+      "classification_report": {
+        "business": {
+          "precision": 0.890625,
+          "recall": 0.9193548387096774,
+          "f1-score": 0.9047619047619048,
+          "support": 124.0
+        },
+        "politics": {
+          "precision": 0.9084967320261438,
+          "recall": 0.9144736842105263,
+          "f1-score": 0.9114754098360656,
+          "support": 152.0
+        },
+        "sports": {
+          "precision": 0.9965556831228473,
+          "recall": 0.9908675799086758,
+          "f1-score": 0.9937034917000572,
+          "support": 876.0
+        },
+        "accuracy": 0.9730902777777778,
+        "macro avg": {
+          "precision": 0.9318924717163304,
+          "recall": 0.9415653676096265,
+          "f1-score": 0.9366469354326759,
+          "support": 1152.0
+        },
+        "weighted avg": {
+          "precision": 0.9735345327114481,
+          "recall": 0.9730902777777778,
+          "f1-score": 0.9732803795267433,
+          "support": 1152.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          114,
+          9,
+          1
+        ],
+        [
+          11,
+          139,
+          2
+        ],
+        [
+          3,
+          5,
+          868
+        ]
+      ]
+    },
+    "elapsed_seconds": 264.42430558399974
+  }
+]

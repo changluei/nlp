@@ -1,0 +1,18 @@
+{
+  "python": "3.12.14",
+  "platform": "macOS-27.0-arm64-arm-64bit",
+  "seed": 42,
+  "packages": {
+    "numpy": "2.2.6",
+    "scipy": "1.16.3",
+    "scikit-learn": "1.7.2",
+    "gensim": "4.4.0",
+    "torch": "2.14.0",
+    "transformers": "4.57.6"
+  },
+  "nyt_sha256": "de12ebe7f41316b798896bf975da840e2998f82393328d375fe5456a14e9eb2d",
+  "hardware": "Apple M5, 24 GiB unified memory",
+  "gensim_blas_patch": "sdot_ptr and dsdot_ptr: except -1 -> noexcept; code/fix_gensim_blas.py",
+  "bert_revision": "86b5e0934494bd15c9632b12f734a8a67f723594",
+  "ag_sha256": "06fa7de72a2f1cb41513c35260964518d029ff63ae631a807d3b189fbf246c4b"
+}
