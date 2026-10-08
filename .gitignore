@@ -41,3 +41,4 @@ HW-1/results/predictions/
 # The report directory publishes exactly one file.
 /HW-1/report/*
 !/HW-1/report/main.pdf
+!/HW-1/report/2412439_崔迪.pdf
