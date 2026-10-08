@@ -1,4 +1,4 @@
-"""HW1 text classification: shared split, six LR baselines, full BERT fine-tuning."""
+"""HW1 text classification: shared split, five LR baselines, full BERT fine-tuning."""
 from __future__ import annotations
 
 import argparse
@@ -14,7 +14,7 @@ import re
 import time
 
 import numpy as np
-from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
+from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix, f1_score
 from sklearn.preprocessing import StandardScaler
@@ -119,19 +119,15 @@ def bow(texts, y, split, output):
     for part in ['validation','test']:
         counts[part] = vectorizer.transform([texts[i] for i in split[part]])
     feature_seconds = time.perf_counter()-start
-    for name in ['binary','frequency','tfidf']:
+    for name in ['binary','frequency']:
         start = time.perf_counter()-feature_seconds
         if name == 'binary':
             matrices = {k:v.copy() for k,v in counts.items()}
             for v in matrices.values(): v.data[:] = 1
-        elif name == 'frequency':
-            matrices = counts
         else:
-            transformer = TfidfTransformer(norm='l2', smooth_idf=True)
-            matrices = {'train': transformer.fit_transform(counts['train'])}
-            for k in ['validation','test']: matrices[k] = transformer.transform(counts[k])
+            matrices = counts
         train_lr(name, matrices, y, split, output, {'vocabulary_size': len(vectorizer.vocabulary_), 'min_df': 2,
-                 'preprocessing': "[a-z]+(?:'[a-z]+)?; lowercase; no stopword removal", 'normalization': 'l2' if name=='tfidf' else None}, start)
+                 'preprocessing': "[a-z]+(?:'[a-z]+)?; lowercase; no stopword removal", 'normalization': None}, start)
 
 
 def mean_vectors(docs, vectors, dimension=100):

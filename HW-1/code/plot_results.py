@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 ROOT=Path(__file__).resolve().parents[1]
-NAMES={'binary':'Binary BoW','frequency':'Word frequency','tfidf':'TF-IDF','glove':'GloVe 6B','w2v_ag':'Word2Vec AG','w2v_nyt':'Word2Vec NYT','bert':'BERT'}
+NAMES={'binary':'Binary BoW','frequency':'Word frequency','glove':'GloVe 6B','w2v_ag':'Word2Vec AG','w2v_nyt':'Word2Vec NYT','bert':'BERT'}
 
 
 def main():

@@ -6,7 +6,7 @@ import numpy as np
 from experiment import LABELS, metrics, read_csv, save_json
 
 ROOT=Path(__file__).resolve().parents[1]
-METHODS=['binary','frequency','tfidf','glove','w2v_ag','w2v_nyt','bert']
+METHODS=['binary','frequency','glove','w2v_ag','w2v_nyt','bert']
 
 
 def main():
@@ -30,7 +30,7 @@ def main():
         audit[method]={'original_test_n':len(ids),'no_train_overlap_n':int(keep.sum()),
                        'no_train_overlap':metrics(y[keep],yh[keep]),'error_count':len(errors),'example_errors':errors[:5]}
     save_json(ROOT/'results/robustness.json',audit)
-    print('All seven saved results match predictions; duplicate-excluded sensitivity computed.')
+    print('All six saved results match predictions; duplicate-excluded sensitivity computed.')
 
 
 if __name__=='__main__':main()

@@ -1,13 +1,13 @@
 # 作业一 文本分类实现
 
-使用课程提供的 NYT 数据完成 7 组分类实验：Binary BoW、Word Frequency、TF-IDF、GloVe 6B 100d、AG News Word2Vec、NYT Word2Vec、BERT-base-uncased。
+使用课程提供的 NYT 数据完成 6 组分类实验：Binary BoW、Word Frequency、GloVe 6B 100d、AG News Word2Vec、NYT Word2Vec、BERT-base-uncased。
 
 ## 文件说明
 
 - `code/experiment.py`：数据校验、统一划分、训练、验证集选模、测试集评价。
 - `code/download_assets.py`：下载指定预训练资源，验证 GloVe SHA256。
 - `code/plot_results.py`：由真实结果生成对比图、混淆矩阵和训练曲线。
-- `code/audit_results.py`：从预测重新核对七组指标，并核查精确重复文本的影响。
+- `code/audit_results.py`：从预测重新核对六组指标，并核查精确重复文本的影响。
 - `code/test_experiment.py`：划分、分词、词表隔离、均值池化和评价指标检查。
 - `results/`：划分索引、数据统计、完整指标、参数、环境和图表。
 - `report/main.pdf`：实验报告。该目录其余文件均被 Git 忽略。
@@ -48,9 +48,9 @@ TOKENIZERS_PARALLELISM=false python HW-1/code/experiment.py --task bert --device
 
 1. 作业要求给出 80%/10%/10% 比例，种子值固定 seed=42，以 `np.random.RandomState(42).permutation(N)` 打乱，按 `floor(0.8N)` 与 `floor(0.9N)` 分段。三组样本量为 9,215 / 1,152 / 1,152。
 2. `results/split.json` 保存原始 CSV 的 0 起始行索引（不计表头）、SHA256 和种子。所有实验使用这些索引；原始文件或种子改变时拒绝覆盖现有划分，可用 `--output NEW_DIRECTORY` 另建实验目录。
-3. 词袋词表、IDF、StandardScaler 仅在训练集拟合。NYT Word2Vec 也只使用训练集文本。AG Word2Vec 使用全部 90,000 条 AG 文本，不使用 NYT 验证/测试文本训练词向量。
+3. 词袋词表、StandardScaler 仅在训练集拟合。NYT Word2Vec 也只使用训练集文本。AG Word2Vec 使用全部 90,000 条 AG 文本，不使用 NYT 验证/测试文本训练词向量。
 4. LR 在验证集上按 Macro-F1 从 `C ∈ {0.01, 0.1, 1, 10}` 选参；同分保留较小 C。词向量使用 100 维向量的有效 token 出现次数均值，OOV 跳过，全 OOV 文档置零，再用训练集统计量标准化。
-5. 作业文字称“三种”词袋方法，但仅列举 Binary 和 Word Frequency，故第三组补充 TF-IDF；报告明确说明这一解释。
+5. 根据课程更正，Task 1 要求 Binary BoW 和 Word Frequency 两种词袋表示。
 6. 原始数据有 72 条重复文本记录，统一随机划分后 8 个相同文本跨训练/测试集。为保持指定实验一致性，主结果保留原始数据；报告说明该限制，并另外核查移除测试集中已在训练集出现文本后的指标。该核查不用于选模型。
 7. 固定随机种子、Word2Vec 单工作线程与稳定词哈希；GPU 算子和库版本仍可能导致少量数值差异。
 
@@ -68,7 +68,6 @@ TOKENIZERS_PARALLELISM=false python HW-1/code/experiment.py --task bert --device
 |---|---:|---:|
 | Binary BoW | 98.70% | 97.11% |
 | Word Frequency | 99.22% | 98.07% |
-| TF-IDF | 99.13% | 98.03% |
 | GloVe 6B 100d | 98.87% | 97.56% |
 | Word2Vec AG | 98.35% | 96.37% |
 | Word2Vec NYT | 98.96% | 97.68% |
